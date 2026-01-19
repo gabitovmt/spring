@@ -2,8 +2,9 @@ package ru.maratgabitov.ch02.decoupled;
 
 import java.util.Properties;
 
+@SuppressWarnings("java:S6548") // Singleton выбран намеренно. Такой пример
 public class MessageSupportFactory {
-    private static final MessageSupportFactory INSTANCE;
+    private static final MessageSupportFactory INSTANCE = new MessageSupportFactory();
 
     private MessageRenderer renderer;
     private MessageProvider provider;
@@ -22,10 +23,6 @@ public class MessageSupportFactory {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-    }
-
-    static {
-        INSTANCE = new MessageSupportFactory();
     }
 
     public static MessageSupportFactory getInstance() {
