@@ -1,4 +1,4 @@
 package ru.maratgabitov.ch03;
 
-public interface Dependency {
+public interface Encyclopedia {
 }
