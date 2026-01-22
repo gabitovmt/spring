@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "ru.maratgabitov"
+group = "ru.maratgabitov.prospring5"
 version = "1.0-SNAPSHOT"
 
 repositories {

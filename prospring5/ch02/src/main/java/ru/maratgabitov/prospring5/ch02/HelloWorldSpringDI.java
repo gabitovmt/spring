@@ -1,8 +1,8 @@
-package ru.maratgabitov.ch02;
+package ru.maratgabitov.prospring5.ch02;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ru.maratgabitov.ch02.decoupled.MessageRenderer;
+import ru.maratgabitov.prospring5.ch02.decoupled.MessageRenderer;
 
 public class HelloWorldSpringDI {
 

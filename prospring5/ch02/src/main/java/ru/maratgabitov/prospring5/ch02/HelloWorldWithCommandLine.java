@@ -1,4 +1,4 @@
-package ru.maratgabitov.ch02;
+package ru.maratgabitov.prospring5.ch02;
 
 public class HelloWorldWithCommandLine {
     @SuppressWarnings("java:S106")

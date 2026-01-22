@@ -1,11 +1,11 @@
-package ru.maratgabitov.ch02.annotated;
+package ru.maratgabitov.prospring5.ch02.annotated;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import ru.maratgabitov.ch02.decoupled.HelloWorldMessageProvider;
-import ru.maratgabitov.ch02.decoupled.MessageProvider;
-import ru.maratgabitov.ch02.decoupled.MessageRenderer;
-import ru.maratgabitov.ch02.decoupled.StandardOutMessageRenderer;
+import ru.maratgabitov.prospring5.ch02.decoupled.HelloWorldMessageProvider;
+import ru.maratgabitov.prospring5.ch02.decoupled.MessageProvider;
+import ru.maratgabitov.prospring5.ch02.decoupled.MessageRenderer;
+import ru.maratgabitov.prospring5.ch02.decoupled.StandardOutMessageRenderer;
 
 @Configuration
 public class HelloWorldConfiguration {

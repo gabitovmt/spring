@@ -1,4 +1,4 @@
-package ru.maratgabitov.ch02.decoupled;
+package ru.maratgabitov.prospring5.ch02.decoupled;
 
 public class HelloWorldMessageProvider implements MessageProvider {
 

@@ -1,4 +1,4 @@
-package ru.maratgabitov.ch03;
+package ru.maratgabitov.prospring5.ch03;
 
 public class ContextualizedDependencyLookup implements ManagedComponent {
     private Dependency dependency;
