@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "ru.maratgabitov.prospring5"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
     mavenCentral()
@@ -12,7 +12,7 @@ repositories {
 val springVersion = "7.0.3"
 
 dependencies {
-    implementation("org.springframework:spring-context:${springVersion}")
+    implementation("org.springframework:spring-context:$springVersion")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
