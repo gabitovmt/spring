@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="ch03:test" external.linked.project.path="$MODULE_DIR$/../../prospring5/ch03" external.root.project.path="$MODULE_DIR$/../../prospring5/ch03" external.system.id="GRADLE" external.system.module.group="ru.maratgabitov.prospring5" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="prospring5:test" external.linked.project.path="$MODULE_DIR$/../../prospring5" external.root.project.path="$MODULE_DIR$/../../prospring5" external.system.id="GRADLE" external.system.module.group="ru.maratgabitov.prospring5" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <output-test url="file://$MODULE_DIR$/../../prospring5/ch03/build/classes/java/test" />
+    <output-test url="file://$MODULE_DIR$/../../prospring5/build/classes/java/test" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../prospring5/ch03/src/test">
-      <sourceFolder url="file://$MODULE_DIR$/../../prospring5/ch03/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../prospring5/ch03/src/test/resources" type="java-test-resource" />
+    <content url="file://$MODULE_DIR$/../../prospring5/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../prospring5/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../prospring5/src/test/resources" type="java-test-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="ch03.main" />
+    <orderEntry type="module" module-name="prospring5.main" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:7.0.3" level="project" />
     <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter:5.10.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-aop:7.0.3" level="project" />
@@ -28,5 +28,5 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.10.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.10.0" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="ch03.main" />
+  <component name="TestModuleProperties" production-module="prospring5.main" />
 </module>
