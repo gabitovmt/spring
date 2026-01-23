@@ -5,7 +5,8 @@
        xsi:schemaLocation=
                "http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="messageProvider" class="ru.maratgabitov.prospring5.ch03.xml.ConfigurableMessageProvider">
+    <bean id="messageProvider"
+          class="ru.maratgabitov.prospring5.ch03.xml.ConfigurableMessageProvider">
         <constructor-arg value="I hope that someone gets my message in a bottle"/>
     </bean>
     <bean id="anotherMessageProvider"
