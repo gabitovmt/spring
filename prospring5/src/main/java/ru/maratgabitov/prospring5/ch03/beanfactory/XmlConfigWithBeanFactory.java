@@ -1,8 +1,9 @@
-package ru.maratgabitov.prospring5.ch03;
+package ru.maratgabitov.prospring5.ch03.beanfactory;
 
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.core.io.ClassPathResource;
+import ru.maratgabitov.prospring5.ch03.ex02.Oracle;
 
 public class XmlConfigWithBeanFactory {
 
@@ -10,7 +11,7 @@ public class XmlConfigWithBeanFactory {
     public static void main(String[] args) {
         var factory = new DefaultListableBeanFactory();
         var rdr = new XmlBeanDefinitionReader(factory);
-        rdr.loadBeanDefinitions(new ClassPathResource("spring/xml-bean-factory-config.xml"));
+        rdr.loadBeanDefinitions(new ClassPathResource("spring/ch03/xml-bean-factory-config.xml"));
 
         var oracle = (Oracle) factory.getBean("oracle");
         System.out.println(oracle.defineMeaningOfLife());

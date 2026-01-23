@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 import ru.maratgabitov.prospring5.ch02.decoupled.MessageRenderer;
 
-@ImportResource(locations = {"classpath:spring/app-context-xml.xml"})
+@ImportResource(locations = {"classpath:spring/ch03/app-context-xml.xml"})
 @Configuration
 public class HelloWorldConfiguration {
 

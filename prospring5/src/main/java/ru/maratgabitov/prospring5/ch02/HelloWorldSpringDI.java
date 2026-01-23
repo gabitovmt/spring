@@ -7,7 +7,7 @@ import ru.maratgabitov.prospring5.ch02.decoupled.MessageRenderer;
 public class HelloWorldSpringDI {
 
     public static void main(String[] args) {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("spring/app-context.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("spring/ch02/app-context.xml");
         var mr = ctx.getBean("renderer", MessageRenderer.class);
         mr.render();
     }

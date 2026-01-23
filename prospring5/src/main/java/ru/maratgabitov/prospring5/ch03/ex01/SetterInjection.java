@@ -1,4 +1,4 @@
-package ru.maratgabitov.prospring5.ch03;
+package ru.maratgabitov.prospring5.ch03.ex01;
 
 public class SetterInjection {
     private Dependency dependency;
