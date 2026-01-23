@@ -15,6 +15,7 @@ public class InjectSimple {
         System.out.println(ctx.getBean("injectSimple1"));
         System.out.println(ctx.getBean("injectSimple2"));
         System.out.println(ctx.getBean("injectSimple3"));
+        ctx.close();
     }
 
     public void setName(String name) {

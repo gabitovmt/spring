@@ -13,6 +13,7 @@ public class InjectSimpleSpel {
     public static void main(String[] args) {
         var ctx = new ClassPathXmlApplicationContext("spring/ch03/inject-simple-spel.xml");
         System.out.println(ctx.getBean("injectSimpleSpel"));
+        ctx.close();
     }
 
     public String getName() {

@@ -23,6 +23,7 @@ public class InjectSimpleSpelA {
     public static void main(String[] args) {
         var ctx = new AnnotationConfigApplicationContext(InjectSimpleSpelA.class);
         System.out.println(ctx.getBean(InjectSimpleSpelA.class));
+        ctx.close();
     }
 
     @Override

@@ -22,6 +22,7 @@ public class InjectSimpleA {
     public static void main(String[] args) {
         var ctx = new AnnotationConfigApplicationContext(InjectSimpleA.class);
         System.out.println(ctx.getBean(InjectSimpleA.class));
+        ctx.close();
     }
 
     @Override
