@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation=
+               "http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="injectSimple1"
+          class="ru.maratgabitov.prospring5.ch03.simpletypes.InjectSimple"
+          p:name="John Mayer"
+          p:age="39"
+          p:height="1.92"
+          p:programmer="false"
+          p:ageInSeconds="1241401112"
+    />
+
+    <bean id="injectSimple2"
+          class="ru.maratgabitov.prospring5.ch03.simpletypes.InjectSimple">
+        <property name="name" value="Tom Mayer"/>
+        <property name="age" value="40"/>
+        <property name="height" value="1.95"/>
+        <property name="programmer" value="true"/>
+        <property name="ageInSeconds" value="0"/>
+    </bean>
+
+    <bean id="injectSimple3"
+          class="ru.maratgabitov.prospring5.ch03.simpletypes.InjectSimple">
+        <property name="name"><value>Sonya Mayer</value></property>
+        <property name="age"><value>16</value></property>
+        <property name="height"><value>1.65</value></property>
+        <property name="programmer"><value>false</value></property>
+        <property name="ageInSeconds"><value>0</value></property>
+    </bean>
+</beans>
