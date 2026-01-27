@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation=
+               "http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="fooOne" class="ru.maratgabitov.prospring5.ch03.autowire.Foo"/>
+    <bean id="barOne" class="ru.maratgabitov.prospring5.ch03.autowire.Bar"/>
+
+    <bean id="targetByName" autowire="byName"
+          class="ru.maratgabitov.prospring5.ch03.autowire.Target"
+          lazy-init="true"/>
+    <bean id="targetByType" autowire="byType"
+          class="ru.maratgabitov.prospring5.ch03.autowire.Target"
+          lazy-init="true"/>
+    <bean id="targetConstructor" autowire="constructor"
+          class="ru.maratgabitov.prospring5.ch03.autowire.Target"
+          lazy-init="true"/>
+</beans>
