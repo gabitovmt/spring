@@ -1,12 +1,10 @@
-package ru.maratgabitov.prospring5.ch04.destroymethod;
-
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.context.support.GenericXmlApplicationContext;
+package ru.maratgabitov.prospring5.ch04.destroybean;
 
 import java.io.File;
+import java.io.IOException;
 
 @SuppressWarnings("java:S106")
-public class DestructiveBean implements InitializingBean {
+public class DestructiveBean {
     private File file;
     private String filePath;
 
@@ -14,8 +12,7 @@ public class DestructiveBean implements InitializingBean {
         this.filePath = filePath;
     }
 
-    @Override
-    public void afterPropertiesSet() throws Exception {
+    public void afterPropertiesSet() throws IOException {
         System.out.println("Initializing Bean");
 
         if (filePath == null) {
@@ -38,17 +35,5 @@ public class DestructiveBean implements InitializingBean {
         }
 
         System.out.println("File exists: " + file.exists());
-    }
-
-    public static void main(String[] args) {
-        var ctx = new GenericXmlApplicationContext();
-        ctx.load("classpath:spring/ch04/destroy-method.xml");
-        ctx.refresh();
-
-        ctx.getBean("destructiveBean", DestructiveBean.class);
-
-        System.out.println("Calling destroy()");
-        ctx.close();
-        System.out.println("called destroy()");
     }
 }

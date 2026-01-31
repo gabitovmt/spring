@@ -1,12 +1,14 @@
-package ru.maratgabitov.prospring5.ch04.destroymethod;
+package ru.maratgabitov.prospring5.ch04.disposablebean;
 
+import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.support.GenericXmlApplicationContext;
+import ru.maratgabitov.prospring5.ch04.destroymethod.DestructiveBean;
 
 import java.io.File;
 
 @SuppressWarnings("java:S106")
-public class DestructiveBean implements InitializingBean {
+public class DestructiveBeanWithInterface implements InitializingBean, DisposableBean {
     private File file;
     private String filePath;
 
@@ -30,6 +32,7 @@ public class DestructiveBean implements InitializingBean {
     }
 
     @SuppressWarnings("java:S4042") // Учебный код
+    @Override
     public void destroy() {
         System.out.println("Destroying Bean");
 
@@ -42,10 +45,10 @@ public class DestructiveBean implements InitializingBean {
 
     public static void main(String[] args) {
         var ctx = new GenericXmlApplicationContext();
-        ctx.load("classpath:spring/ch04/destroy-method.xml");
+        ctx.load("classpath:spring/ch04/destructive-bean.xml");
         ctx.refresh();
 
-        ctx.getBean("destructiveBean", DestructiveBean.class);
+        ctx.getBean("destructiveBean", DestructiveBeanWithInterface.class);
 
         System.out.println("Calling destroy()");
         ctx.close();

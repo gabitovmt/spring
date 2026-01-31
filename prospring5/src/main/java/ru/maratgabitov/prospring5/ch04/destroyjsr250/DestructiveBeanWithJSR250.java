@@ -1,12 +1,15 @@
-package ru.maratgabitov.prospring5.ch04.destroymethod;
+package ru.maratgabitov.prospring5.ch04.destroyjsr250;
 
-import org.springframework.beans.factory.InitializingBean;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.context.support.GenericXmlApplicationContext;
+import ru.maratgabitov.prospring5.ch04.destroymethod.DestructiveBean;
 
 import java.io.File;
+import java.io.IOException;
 
 @SuppressWarnings("java:S106")
-public class DestructiveBean implements InitializingBean {
+public class DestructiveBeanWithJSR250 {
     private File file;
     private String filePath;
 
@@ -14,8 +17,8 @@ public class DestructiveBean implements InitializingBean {
         this.filePath = filePath;
     }
 
-    @Override
-    public void afterPropertiesSet() throws Exception {
+    @PostConstruct
+    public void afterPropertiesSet() throws IOException {
         System.out.println("Initializing Bean");
 
         if (filePath == null) {
@@ -30,6 +33,7 @@ public class DestructiveBean implements InitializingBean {
     }
 
     @SuppressWarnings("java:S4042") // Учебный код
+    @PreDestroy
     public void destroy() {
         System.out.println("Destroying Bean");
 
@@ -42,10 +46,10 @@ public class DestructiveBean implements InitializingBean {
 
     public static void main(String[] args) {
         var ctx = new GenericXmlApplicationContext();
-        ctx.load("classpath:spring/ch04/destroy-method.xml");
+        ctx.load("classpath:spring/ch04/destroy-jsr-250.xml");
         ctx.refresh();
 
-        ctx.getBean("destructiveBean", DestructiveBean.class);
+        ctx.getBean("destructiveBean", DestructiveBeanWithJSR250.class);
 
         System.out.println("Calling destroy()");
         ctx.close();
