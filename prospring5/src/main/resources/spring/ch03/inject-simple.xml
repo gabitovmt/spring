@@ -6,7 +6,7 @@
                "http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="injectSimple1"
-          class="ru.maratgabitov.prospring5.ch03.simpletypes.InjectSimple"
+          class="spring.ch03.simpletypes.InjectSimple"
           p:name="John Mayer"
           p:age="39"
           p:height="1.92"
@@ -15,7 +15,7 @@
     />
 
     <bean id="injectSimple2"
-          class="ru.maratgabitov.prospring5.ch03.simpletypes.InjectSimple">
+          class="spring.ch03.simpletypes.InjectSimple">
         <property name="name" value="Tom Mayer"/>
         <property name="age" value="40"/>
         <property name="height" value="1.95"/>
@@ -24,7 +24,7 @@
     </bean>
 
     <bean id="injectSimple3"
-          class="ru.maratgabitov.prospring5.ch03.simpletypes.InjectSimple">
+          class="spring.ch03.simpletypes.InjectSimple">
         <property name="name"><value>Sonya Mayer</value></property>
         <property name="age"><value>16</value></property>
         <property name="height"><value>1.65</value></property>

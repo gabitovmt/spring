@@ -11,6 +11,6 @@
     <context:annotation-config/>
 
     <bean id="destructiveBean"
-          class="ru.maratgabitov.prospring5.ch04.destroyjsr250.DestructiveBeanWithJSR250"
+          class="spring.ch04.destroyjsr250.DestructiveBeanWithJSR250"
           p:filePath="#{systemProperties['java.io.tmpdir']}#{systemProperties['file.separator']}test.txt"/>
 </beans>

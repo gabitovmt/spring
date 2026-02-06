@@ -7,7 +7,7 @@
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="destructiveBean"
-          class="ru.maratgabitov.prospring5.ch04.disposablebean.DestructiveBeanWithInterface"
+          class="spring.ch04.disposablebean.DestructiveBeanWithInterface"
           p:filePath="#{systemProperties['java.io.tmpdir']}#{systemProperties['file.separator']}test.txt"/>
-    <bean class="ru.maratgabitov.prospring5.ch04.contextaware.ShutdownHookBean"/>
+    <bean class="spring.ch04.contextaware.ShutdownHookBean"/>
 </beans>

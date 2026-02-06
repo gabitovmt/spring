@@ -5,8 +5,8 @@
                "http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="johnMayer"
-          class="ru.maratgabitov.prospring5.ch03.dependson.Singer"
+          class="spring.ch03.dependson.Singer"
           depends-on="gopher"/>
     <bean id="gopher"
-          class="ru.maratgabitov.prospring5.ch03.dependson.Guitar"/>
+          class="spring.ch03.dependson.Guitar"/>
 </beans>

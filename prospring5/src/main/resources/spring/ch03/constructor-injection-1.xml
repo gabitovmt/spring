@@ -12,5 +12,5 @@
           c:_0="I hope that someone gets my message in a bottle"/>
     <bean id="message2" class="java.lang.String"
           c:_0="I know I won't be injected :("/>
-    <context:component-scan base-package="ru.maratgabitov.prospring5.ch03.annotated1"/>
+    <context:component-scan base-package="spring.ch03.annotated1"/>
 </beans>

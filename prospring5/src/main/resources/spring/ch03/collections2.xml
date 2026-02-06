@@ -11,7 +11,7 @@
                 http://www.springframework.org/schema/util
                 https://www.springframework.org/schema/util/spring-util.xsd">
 
-    <context:component-scan base-package="ru.maratgabitov.prospring5.ch03.collections2"/>
+    <context:component-scan base-package="spring.ch03.collections2"/>
 
     <util:map id="map" map-class="java.util.HashMap">
         <entry key="someValue" value="It's a Friday, we finally made it"/>

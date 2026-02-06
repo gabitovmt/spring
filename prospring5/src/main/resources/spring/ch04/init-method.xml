@@ -8,14 +8,14 @@
        default-lazy-init="true">
 
     <bean id="singerOne"
-          class="ru.maratgabitov.prospring5.ch04.initmethod.Singer"
+          class="spring.ch04.initmethod.Singer"
           init-method="init" p:name="John Mayer" p:age="39"/>
 
     <bean id="singerTwo"
-          class="ru.maratgabitov.prospring5.ch04.initmethod.Singer"
+          class="spring.ch04.initmethod.Singer"
           init-method="init" p:age="72"/>
 
     <bean id="singerThree"
-          class="ru.maratgabitov.prospring5.ch04.initmethod.Singer"
+          class="spring.ch04.initmethod.Singer"
           init-method="init" p:name="John Bulter"/>
 </beans>

@@ -7,7 +7,7 @@
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="destructiveBean"
-          class="ru.maratgabitov.prospring5.ch04.destroymethod.DestructiveBean"
+          class="spring.ch04.destroymethod.DestructiveBean"
           destroy-method="destroy"
           p:filePath="#{systemProperties['java.io.tmpdir']}#{systemProperties['file.separator']}test.txt"/>
 </beans>

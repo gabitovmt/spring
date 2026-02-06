@@ -1,0 +1,12 @@
+package spring.ch03.dependson1;
+
+import org.springframework.stereotype.Component;
+
+@Component("gopher")
+public class Guitar {
+
+    @SuppressWarnings("java:S106")
+    public void sing() {
+        System.out.println("Cm Eb Fm Ab Bb");
+    }
+}

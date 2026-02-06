@@ -6,9 +6,9 @@
                "http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="injectSimpleConfig"
-          class="ru.maratgabitov.prospring5.ch03.spel.InjectSimpleConfig"/>
+          class="spring.ch03.spel.InjectSimpleConfig"/>
     <bean id="injectSimpleSpel"
-          class="ru.maratgabitov.prospring5.ch03.spel.InjectSimpleSpel"
+          class="spring.ch03.spel.InjectSimpleSpel"
           p:name="#{injectSimpleConfig.name}"
           p:age="#{injectSimpleConfig.age + 1}"
           p:height="#{injectSimpleConfig.height}"

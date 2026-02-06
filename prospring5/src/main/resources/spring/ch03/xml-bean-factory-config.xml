@@ -4,5 +4,5 @@
        xsi:schemaLocation=
                "http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="oracle" name="wiseworm" class="ru.maratgabitov.prospring5.ch03.ex02.BookwormOracle"/>
+    <bean id="oracle" name="wiseworm" class="spring.ch03.ex02.BookwormOracle"/>
 </beans>

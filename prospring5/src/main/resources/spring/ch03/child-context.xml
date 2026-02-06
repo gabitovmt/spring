@@ -6,11 +6,11 @@
        xsi:schemaLocation=
                "http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="song1" class="ru.maratgabitov.prospring5.ch03.hierarchical.Song"
+    <bean id="song1" class="spring.ch03.hierarchical.Song"
           p:title-ref="parentTitle"/>
-    <bean id="song2" class="ru.maratgabitov.prospring5.ch03.hierarchical.Song"
+    <bean id="song2" class="spring.ch03.hierarchical.Song"
           p:title-ref="childTitle"/>
-    <bean id="song3" class="ru.maratgabitov.prospring5.ch03.hierarchical.Song">
+    <bean id="song3" class="spring.ch03.hierarchical.Song">
         <property name="title">
             <ref parent="childTitle"/>
         </property>

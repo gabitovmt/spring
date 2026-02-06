@@ -5,9 +5,9 @@
                "http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="lyricHolder" class="ru.maratgabitov.prospring5.ch03.collections.LyricHolder"/>
+    <bean id="lyricHolder" class="spring.ch03.collections.LyricHolder"/>
 
-    <bean id="injectCollection" class="ru.maratgabitov.prospring5.ch03.collections.CollectionInjection">
+    <bean id="injectCollection" class="spring.ch03.collections.CollectionInjection">
         <property name="map">
             <map>
                 <entry key="someValue">

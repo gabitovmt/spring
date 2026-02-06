@@ -6,15 +6,15 @@
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="methodReplacer"
-          class="ru.maratgabitov.prospring5.ch03.methodreplacer.FormatMessageReplacer"/>
+          class="spring.ch03.methodreplacer.FormatMessageReplacer"/>
 
     <bean id="replacementTarget"
-          class="ru.maratgabitov.prospring5.ch03.methodreplacer.ReplacementTarget">
+          class="spring.ch03.methodreplacer.ReplacementTarget">
         <replaced-method name="formatMessage" replacer="methodReplacer">
             <arg-type>String</arg-type>
         </replaced-method>
     </bean>
 
     <bean id="standardTarget"
-          class="ru.maratgabitov.prospring5.ch03.methodreplacer.ReplacementTarget"/>
+          class="spring.ch03.methodreplacer.ReplacementTarget"/>
 </beans>

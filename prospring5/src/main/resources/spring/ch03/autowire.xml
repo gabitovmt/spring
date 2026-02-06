@@ -4,16 +4,16 @@
        xsi:schemaLocation=
                "http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="fooOne" class="ru.maratgabitov.prospring5.ch03.autowire.Foo"/>
-    <bean id="barOne" class="ru.maratgabitov.prospring5.ch03.autowire.Bar"/>
+    <bean id="fooOne" class="spring.ch03.autowire.Foo"/>
+    <bean id="barOne" class="spring.ch03.autowire.Bar"/>
 
     <bean id="targetByName" autowire="byName"
-          class="ru.maratgabitov.prospring5.ch03.autowire.Target"
+          class="spring.ch03.autowire.Target"
           lazy-init="true"/>
     <bean id="targetByType" autowire="byType"
-          class="ru.maratgabitov.prospring5.ch03.autowire.Target"
+          class="spring.ch03.autowire.Target"
           lazy-init="true"/>
     <bean id="targetConstructor" autowire="constructor"
-          class="ru.maratgabitov.prospring5.ch03.autowire.Target"
+          class="spring.ch03.autowire.Target"
           lazy-init="true"/>
 </beans>

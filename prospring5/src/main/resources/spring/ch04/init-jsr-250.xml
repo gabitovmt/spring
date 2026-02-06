@@ -13,14 +13,14 @@
     <context:annotation-config/>
 
     <bean id="singerOne"
-          class="ru.maratgabitov.prospring5.ch04.initjsr250.SingerWithJSR250"
+          class="spring.ch04.initjsr250.SingerWithJSR250"
           p:name="John Mayer" p:age="39"/>
 
     <bean id="singerTwo"
-          class="ru.maratgabitov.prospring5.ch04.initjsr250.SingerWithJSR250"
+          class="spring.ch04.initjsr250.SingerWithJSR250"
           p:age="72"/>
 
     <bean id="singerThree"
-          class="ru.maratgabitov.prospring5.ch04.initjsr250.SingerWithJSR250"
+          class="spring.ch04.initjsr250.SingerWithJSR250"
           p:name="John Bulter"/>
 </beans>

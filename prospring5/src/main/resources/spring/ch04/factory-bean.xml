@@ -7,14 +7,14 @@
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="shaDigest"
-          class="ru.maratgabitov.prospring5.ch04.factorybean.MessageDigestFactoryBean"
+          class="spring.ch04.factorybean.MessageDigestFactoryBean"
           p:algorithmName="SHA1"/>
 
     <bean id="defaultDigest"
-          class="ru.maratgabitov.prospring5.ch04.factorybean.MessageDigestFactoryBean"/>
+          class="spring.ch04.factorybean.MessageDigestFactoryBean"/>
 
     <bean id="digester"
-          class="ru.maratgabitov.prospring5.ch04.factorybean.MessageDigester"
+          class="spring.ch04.factorybean.MessageDigester"
           p:digest1-ref="shaDigest"
           p:digest2-ref="defaultDigest"/>
 </beans>

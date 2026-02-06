@@ -5,15 +5,15 @@
                "http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="constructorConfusion1"
-          class="ru.maratgabitov.prospring5.ch03.confused.ConstructorConfusionXml">
+          class="spring.ch03.confused.ConstructorConfusionXml">
         <constructor-arg value="90"/>
     </bean>
     <bean id="constructorConfusion2"
-          class="ru.maratgabitov.prospring5.ch03.confused.ConstructorConfusionXml">
+          class="spring.ch03.confused.ConstructorConfusionXml">
         <constructor-arg value="90" type="int"/>
     </bean>
     <bean id="constructorConfusion3"
-          class="ru.maratgabitov.prospring5.ch03.confused.ConstructorConfusionXml">
+          class="spring.ch03.confused.ConstructorConfusionXml">
         <constructor-arg>
             <value type="int">90</value>
         </constructor-arg>

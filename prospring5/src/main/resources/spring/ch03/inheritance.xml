@@ -6,9 +6,9 @@
                "http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="parent"
-          class="ru.maratgabitov.prospring5.ch03.inheritance.Singer"
+          class="spring.ch03.inheritance.Singer"
           p:name="John Mayer" p:age="39"/>
     <bean id="child"
-          class="ru.maratgabitov.prospring5.ch03.inheritance.Singer"
+          class="spring.ch03.inheritance.Singer"
           parent="parent" p:age="0"/>
 </beans>

@@ -6,16 +6,16 @@
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="singer"
-          class="ru.maratgabitov.prospring5.ch03.methodreplacement.Singer"
+          class="spring.ch03.methodreplacement.Singer"
           scope="prototype"/>
 
     <bean id="abstractLookupBean"
-          class="ru.maratgabitov.prospring5.ch03.methodreplacement.AbstractLookupDemoBean">
+          class="spring.ch03.methodreplacement.AbstractLookupDemoBean">
         <lookup-method name="getMySinger" bean="singer"/>
     </bean>
 
     <bean id="standardLookupBean"
-          class="ru.maratgabitov.prospring5.ch03.methodreplacement.StandardLookupDemoBean">
+          class="spring.ch03.methodreplacement.StandardLookupDemoBean">
         <property name="mySinger" ref="singer"/>
     </bean>
 </beans>
