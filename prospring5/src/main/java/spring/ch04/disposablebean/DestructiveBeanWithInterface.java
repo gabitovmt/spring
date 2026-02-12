@@ -52,6 +52,6 @@ public class DestructiveBeanWithInterface implements InitializingBean, Disposabl
 
         System.out.println("Calling destroy()");
         ctx.close();
-        System.out.println("called destroy()");
+        System.out.println("Called destroy()");
     }
 }
