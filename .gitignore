@@ -25,6 +25,7 @@ replay_pid*
 
 # Gradle файлы сборки
 .gradle/
+gradle
 build/
 
 # Gradle GUI настройки

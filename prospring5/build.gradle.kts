@@ -17,6 +17,7 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api:$jakartaAnnotationApiVersion")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("org.springframework:spring-test:$springVersion")
 }
 
 tasks.test {

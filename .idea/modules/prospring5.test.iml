@@ -13,6 +13,7 @@
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:7.0.3" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.annotation:jakarta.annotation-api:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter:5.10.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-test:7.0.3" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-aop:7.0.3" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-beans:7.0.3" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-expression:7.0.3" level="project" />
