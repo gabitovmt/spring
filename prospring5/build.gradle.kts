@@ -11,13 +11,16 @@ repositories {
 
 val springVersion = "7.0.3"
 val jakartaAnnotationApiVersion = "3.0.0"
+var junitVersion = "6.0.2"
 
 dependencies {
     implementation("org.springframework:spring-context:$springVersion")
     implementation("jakarta.annotation:jakarta.annotation-api:$jakartaAnnotationApiVersion")
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.springframework:spring-test:$springVersion")
+
+    testImplementation(platform("org.junit:junit-bom:$junitVersion"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 tasks.test {
