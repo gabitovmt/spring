@@ -11,6 +11,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:7.0.3" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.annotation:jakarta.annotation-api:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: jakarta.inject:jakarta.inject-api:2.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-aop:7.0.3" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-beans:7.0.3" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-expression:7.0.3" level="project" />
