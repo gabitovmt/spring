@@ -6,51 +6,10 @@
 
     <groupId>spring</groupId>
     <artifactId>spring-shell</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <spring-shell.version>4.0.2</spring-shell.version>
-        <logback.version>1.5.26</logback.version>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.shell</groupId>
-            <artifactId>spring-shell-core</artifactId>
-            <version>${spring-shell.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <mainClass>spring.helloworld.SpringShellApplication</mainClass>
-                    <layout>JAR</layout>
-                    <finalName>hello-world</finalName>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>hello-world</module>
+    </modules>
 
 </project>
