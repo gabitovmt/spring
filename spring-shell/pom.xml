@@ -10,6 +10,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>hello-world</module>
+        <module>shell</module>
     </modules>
-
 </project>
